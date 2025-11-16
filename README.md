@@ -1,12 +1,12 @@
-AI Face Emotion Detection
+#AI Face Emotion Detection
 
 This project is an AI-powered Emotion Detection System that uses deep learning to recognize human facial expressions from images or video streams. The model analyzes facial features and predicts emotions such as Happy, Sad, Angry, Surprise, Neutral, Fear, and Disgust using a trained Convolutional Neural Network (CNN).
 
-✨ Project Overview
+#✨ Project Overview
 
 The system takes a human face as input, processes it using image preprocessing techniques, and classifies the detected emotion. It is built using Python, TensorFlow/Keras, and OpenCV, making it fast, efficient, and easy to deploy.
 
-🎯 Features
+#🎯 Features
 
 Detects emotions from images or webcam in real-time
 
@@ -20,7 +20,7 @@ Lightweight and optimized for high accuracy
 
 Easy to integrate with other applications
 
-🧠 Model Architecture
+#🧠 Model Architecture
 
 Conv2D layers for feature extraction
 
@@ -48,7 +48,7 @@ Matplotlib
 
 ImageDataGenerator for data augmentation
 
-🚀 How It Works
+#🚀 How It Works
 
 System loads the trained CNN model
 
@@ -71,11 +71,11 @@ Displays emotion label on the face live
  ├── requirements.txt
  └── README.md
 
-📈 Accuracy
+#📈 Accuracy
 
 The model achieves good accuracy on the FER2013 dataset thanks to data augmentation, dropout layers, and batch normalization.
 
-📝 Future Improvements
+#📝 Future Improvements
 
 Add support for multi-face detection
 
