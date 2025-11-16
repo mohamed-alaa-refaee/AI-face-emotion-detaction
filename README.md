@@ -1,102 +1,97 @@
-AI Face Emotion Detection System
+AI Facial Emotion Detection System
 
-This project is a complete Facial Emotion Recognition System built using Deep Learning, OpenCV, and a custom CNN model.
-It includes:
 
-A full training pipeline
 
-Dataset augmentation tool
 
-A real-time GUI application for emotion detection
 
-The system predicts emotions such as:
+
+
+
+
+
+📌 Overview
+
+This project is a complete AI-powered Facial Emotion Detection system built using Deep Learning, Computer Vision, and a custom CNN model.
+The system can recognize emotions in real-time from webcam input and classify them into:
+
 Angry, Disgust, Fear, Happy, Neutral, Sad, Surprise
 
-🚀 Features
-✔ 1. Deep Learning Model
+It includes:
 
-Custom CNN built with TensorFlow/Keras
+Dataset loading & preprocessing
 
-Trained on an augmented dataset of 48×48 grayscale faces
+CNN model training
 
-Uses:
+Data augmentation module
 
-Conv2D layers
+Real-time detection GUI
+
+📖 Table of Contents
+
+Features
+
+Screenshots
+
+Model Architecture
+
+Tech Stack
+
+Project Structure
+
+Installation
+
+Usage
+
+Results
+
+Future Improvements
+
+License
+
+✨ Features
+
+🔍 Real-time webcam emotion detection
+
+🧠 Custom CNN trained on augmented dataset
+
+📈 Confusion matrix & accuracy visualization
+
+🎨 GUI interface using Tkinter
+
+📦 Data augmentation pipeline
+
+📊 Per-class accuracy calculations
+
+📸 Screenshots
+
+Befor augmentation:
+<img width="1189" height="690" alt="image" src="https://github.com/user-attachments/assets/b4b0855f-fc5c-4b30-99af-b051c33f7a79" />
+
+After augmentation:
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/f7dfebf1-f0bc-428e-9ac1-98a070c05a88" />
+
+
+🧠 Model Architecture
+
+Conv2D + ReLU
 
 MaxPooling
 
-Dropout
-
 Batch Normalization
 
-Softmax classifier
+Dropout
 
-✔ 2. Data Augmentation Tool
+Dense + Softmax
 
-Automatically generates images (flip, rotate, zoom, shift)
+Optimizers & callbacks:
 
-Saves augmented dataset to a folder
-
-✔ 3. Real-Time Emotion Detection GUI
-
-Built with Tkinter
-
-Uses OpenCV to capture webcam video
-
-Loads trained model
-
-Displays the live emotion prediction on screen
-
-📁 Project Structure
-📁 Emotion-Detection-Project
- ├── 01_training.ipynb        # Model training pipeline
- ├── 02_augmentation.ipynb    # Data augmentation tool
- ├── 03_gui_app.ipynb         # Tkinter real-time detection app
- ├── model.h5                 # Saved trained model (optional)
- ├── augmented_dataset/        # Auto-generated images
- ├── README.md
-
-🧠 Model Training Workflow
-
-Load dataset from folders
-
-Preprocess images
-
-Encode emotion labels
-
-Build and compile CNN model
-
-Train using:
+Adam
 
 EarlyStopping
 
 ReduceLROnPlateau
 
-Evaluate performance
-
-Generate:
-
-Accuracy/Loss curves
-
-Confusion matrix
-
-Per-class accuracy results
-
-📊 Evaluation Metrics
-
-Your notebook computes:
-
-Overall accuracy
-
-Per-class accuracy
-
-Confusion matrix
-
-Training accuracy & loss curves
-
-These visualizations help verify training quality.
-
-🛠️ Technologies Used
+🛠 Tech Stack
 
 Python
 
@@ -106,44 +101,57 @@ OpenCV
 
 NumPy
 
-Matplotlib
-
-Tkinter (GUI)
-
 scikit-learn
 
-▶️ How to Run
-1️⃣ Install dependencies
-pip install tensorflow opencv-python numpy matplotlib scikit-learn pillow
+Matplotlib
 
-2️⃣ Train the model
+Tkinter
 
-Run:
 
-01_training.ipynb
+🔧 Installation
+git clone https://github.com/your-username/emotion-detection.git
+cd emotion-detection
+pip install -r requirements.txt
 
-3️⃣ Generate augmented images
+▶️ Usage
 
-Run:
+Generate augmented data
+01_augmentation.ipynb
 
-02_augmentation.ipynb
+Train the model
+02_training.ipynb
 
-4️⃣ Launch the GUI real-time detector
-
-Run:
-
+Run real-time GUI
 03_gui_app.ipynb
 
-📝 Future Improvements
+📊 Results
 
-Replace CNN with MobileNetV2 for higher accuracy
+ Model Accuracy: 83.02%
+<img width="852" height="690" alt="image" src="https://github.com/user-attachments/assets/9e59c019-58c8-430a-8f39-84aec7a21235" />
 
-Add face alignment for better detection
+<img width="865" height="690" alt="image" src="https://github.com/user-attachments/assets/884bcf61-2832-423a-8dfa-31512e59997d" />
 
-Export model to TensorFlow Lite
+<img width="1189" height="390" alt="image" src="https://github.com/user-attachments/assets/1a484599-223f-4df5-ae9f-9979908ab61e" />
 
-Build a full desktop or web app
+> Accuracy 76.08% for <angry>
+> Accuracy 96.82% for <disgust>
+> Accuracy 72.00% for <fear>
+> Accuracy 92.67% for <happy>
+> Accuracy 80.90% for <neutral>
+> Accuracy 71.72% for <sad>
+> Accuracy 91.41% for <surprise>
+
+
+🚀 Future Improvements
+
+Use MobileNetV2 or EfficientNet
+
+Deploy as desktop/web application
+
+Convert to TensorFlow Lite
+
+Multi-face emotion detection
 
 📄 License
 
-This project is open source — feel free to modify and use it for learning or development.
+This project is licensed under the MIT License.
