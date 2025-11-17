@@ -108,14 +108,14 @@ Matplotlib
 Tkinter
 
 ## ▶️ Usage
-Generate augmented data: 
- [01_Data Augmentation.ipynb]
+>Generate augmented data: 
+ [ 01_Data Augmentation.ipynb ]
 
-Train the model: 
- [02_AI face emotion detaction training.ipynb]
+>Train the model: 
+ [ 02_AI face emotion detaction training.ipynb ]
 
-Run real-time GUI: 
- [03_GUI.ipynb]
+>Run real-time GUI: 
+ [ 03_GUI.ipynb ]
 
 
 ## 📊 Results
