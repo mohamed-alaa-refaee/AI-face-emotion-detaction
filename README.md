@@ -50,17 +50,17 @@ License
 
 ## ✨ Features
 
- Real-time emotion detection
+ >Real-time emotion detection
 
- Custom CNN trained on augmented dataset
+ >Custom CNN trained on augmented dataset
 
- Confusion matrix & accuracy visualization
+ >Confusion matrix & accuracy visualization
 
- GUI interface using Tkinter
+ >GUI interface using Tkinter
 
- Data augmentation pipeline
+ >Data augmentation pipeline
 
- Per-class accuracy calculations
+ >Per-class accuracy calculations
 
 ## 📸 Screenshots
 
@@ -73,39 +73,39 @@ After augmentation:
 
 ## 🧠 Model Architecture
 
-Conv2D + ReLU
+>Conv2D + ReLU
 
-MaxPooling
+>MaxPooling
 
-Batch Normalization
+>Batch Normalization
 
-Dropout
+>Dropout
 
-Dense + Softmax
+>Dense + Softmax
 
-Optimizers & callbacks:
+>Optimizers & callbacks:
 
-Adam
+>Adam
 
-EarlyStopping
+>EarlyStopping
 
-ReduceLROnPlateau
+>ReduceLROnPlateau
 
 ## 🛠 Tech Stack
 
-Python
+>Python
 
-TensorFlow / Keras
+>TensorFlow / Keras
 
-OpenCV
+>OpenCV
 
-NumPy
+>NumPy
 
-scikit-learn
+>scikit-learn
 
-Matplotlib
+>Matplotlib
 
-Tkinter
+>Tkinter
 
 ## ▶️ Usage
 >Generate augmented data: 
@@ -120,7 +120,7 @@ Tkinter
 
 ## 📊 Results
 
- Model Accuracy: 83.02%
+ >Model Accuracy: 83.02%
 <img width="852" height="690" alt="image" src="https://github.com/user-attachments/assets/9e59c019-58c8-430a-8f39-84aec7a21235" />
 
 <img width="865" height="690" alt="image" src="https://github.com/user-attachments/assets/884bcf61-2832-423a-8dfa-31512e59997d" />
@@ -144,14 +144,17 @@ Tkinter
 
 ## 🚀 Future Improvements
 
-Use MobileNetV2 or EfficientNet
+>Add real-time webcam emotion detection
 
-Deploy as desktop/web application
+>Use MobileNetV2 or EfficientNet
 
-Convert to TensorFlow Lite
+>Deploy as desktop/web application
 
-Multi-face emotion detection
+>Convert to TensorFlow Lite
+
+>Multi-face emotion detection
+
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+>This project is licensed under the MIT License.
